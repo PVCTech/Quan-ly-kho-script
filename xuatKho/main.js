@@ -176,14 +176,16 @@ class PhieuXuatKho
             return;
           }
 
-          document.getElementById('divThongBao_saving').style.display = 'block';
+            thongBaoPopup.show('Đang lưu dữ liệu..);
+          //document.getElementById('divThongBao_saving').style.display = 'block';
 
           google.script.run.withSuccessHandler(function(ketQua)
           {
             ketQua = JSON.parse(ketQua);
             if (ketQua.trangThai == 1)
             {
-              document.getElementById('divThongBao_saving').style.display = 'none';              
+                  thongBaoPopup.hide();
+              //document.getElementById('divThongBao_saving').style.display = 'none';              
               document.getElementById('xuatKho_div').style.display = 'none';
               setTimeout(function()
               {
