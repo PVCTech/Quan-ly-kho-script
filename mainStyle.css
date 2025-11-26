@@ -1,1 +1,12 @@
+.menu__button
+{
+  padding: 12px;
+  border-radius: 5px;
+  border: 1px solid #f67c0a;
+  background-color: #0e8d44;
+  color: white;
+  text-align:center;
+  vertical-align:middle;
+}
 
+a {text-decoration:none;}
