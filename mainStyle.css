@@ -10,3 +10,12 @@
 }
 
 a {text-decoration:none;}
+
+input, button,.button, .inputBox {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  box-sizing:border-box !important;
+}
