@@ -1,3 +1,31 @@
+class MenuTop
+{
+      constructor(danhSachButton)
+      {
+            
+      }
+}
+
+class MenuTop_button
+{
+      constructor (link = '',caption='', target="_self")
+      {
+            this.link = link;
+            this.caption = caption;
+            this.target = target;
+      }
+
+      render()
+      {
+            let html = `<a href="${this.link}" target="${this.target}">
+            <div class="menu__button">
+              ${this.caption}
+            </div>
+          </a>`;
+      }
+}
+
+Trang chủ trangchu https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec
 <table style="width:100%;box-sizing:border-box;background-color:#0e8d44;color:white;padding:8px;text-align:center;">
       <tr>
         <td>
