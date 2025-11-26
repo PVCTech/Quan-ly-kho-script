@@ -23,7 +23,7 @@ class ThongBaoPopup
 
   hide()
   {
-    document.getElementById($this.id).style.display = 'none';
+    document.getElementById(this.id).style.display = 'none';
   }
 
   show(noiDungShow='')
@@ -31,8 +31,8 @@ class ThongBaoPopup
     if (noiDungShow =='') {}
     else
     {
-      document.getElementById($this.id + '_noiDung').innerText = noiDungShow;
+      document.getElementById(this.id + '_noiDung').innerText = noiDungShow;
     }
-    document.getElementById($this.id).style.display = 'block';
+    document.getElementById(this.id).style.display = 'block';
   }
 }
