@@ -28,11 +28,12 @@ class ThongBaoPopup
 
   show(noiDungShow='')
   {
+    var that = this;
     if (noiDungShow =='') {}
     else
     {
-      document.getElementById(this.id + '_noiDung').innerText = noiDungShow;
+      document.getElementById(that.id + '_noiDung').innerText = noiDungShow;
     }
-    document.getElementById(this.id).style.display = 'block';
+    document.getElementById(that.id).style.display = 'block';
   }
 }
