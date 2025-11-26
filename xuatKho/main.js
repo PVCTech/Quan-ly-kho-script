@@ -176,7 +176,7 @@ class PhieuXuatKho
             return;
           }
 
-            thongBaoPopup.show('Đang lưu dữ liệu..);
+            thongBaoPopup.show('Đang lưu dữ liệu..');
           //document.getElementById('divThongBao_saving').style.display = 'block';
 
           google.script.run.withSuccessHandler(function(ketQua)
