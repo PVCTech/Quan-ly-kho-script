@@ -1,3 +1,18 @@
+:root
+{
+  --main-color:#f67c0a;
+  --main-background:#fff;
+  --button-background:#0e8d44;
+  --button-color:#fff;
+  --main-border:1px solid #f67c0a;
+}
+
+body
+{
+  background-color:var(--main-background);
+  color: var(--main-color);
+}
+
 .menu__button
 {
   padding: 12px;
