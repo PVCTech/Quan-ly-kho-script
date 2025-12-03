@@ -46,7 +46,7 @@ menuTop.innerHTML = `
                   </td>
 
                   <td style="width:50px;">
-                        <a href="#">
+                        <a id="menuUserButton">
                               <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/user.svg" style="height:30px;" class="menu__icon-menu">
                         </a>
                   </td>
@@ -71,14 +71,32 @@ menuTop.innerHTML = `
                   </a>
             </div>
             
-            <div>
+            <div style="margin-bottom:20px;">
                   <a href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=tra-cuu-vat-tu" class="menu__button">
                         Tìm, Xuất vật tư
                   </a>
             </div>
       </div>
+
+      <div class="menu__user" id="menuUser">
+            <div id="menuUser_name" style="font-weight:bold; font-size:16px; margin-bottom:10px;margin-top:10px;">
+                  Trần Văn Hùng
+            </div>
+            <div>
+                  <a href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
+                        Đổi mật khẩu
+                  </a>
+            </div>
+            <div>
+                  <a href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
+                        Đăng xuất
+                  </a>
+            </div>
+      </div>
 `;      
 document.body.insertBefore(menuTop, document.body.firstChild);
+
+document.getElementById("menuLeftButton").addEventListener("click", menuLeft_toggle);
 var menuLeftShown = false;
 function menuLeft_toggle()
 {
@@ -95,4 +113,20 @@ function menuLeft_toggle()
       }
 }
 
-document.getElementById("menuLeftButton").addEventListener("click", menuLeft_toggle);
+document.getElementById("menuUserButton").addEventListener("click", menuUser_toggle);
+var menuUserShown = false;
+function menuUser_toggle()
+{
+      let menuUser = document.getElementById("menuUser");
+      if (menuUserShown)
+      {
+            menuUser.style.display = "none";
+            menuUserShown = false;
+      }
+      else
+      {
+            menuUser.style.display = "flex";
+            menuUserShown = true;
+      }
+}
+

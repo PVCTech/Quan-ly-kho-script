@@ -65,3 +65,16 @@ menu__icon-menu:hover
     z-index: 1000;
     gap:20px;
 }
+
+.menu__user
+{
+    position: fixed;
+    top:50px;
+    right:0px;
+    width:300px;
+    display: none;
+    background-color: var(--button-background);
+    flex-direction: column;
+    z-index: 1000;
+    gap:20px;
+}
