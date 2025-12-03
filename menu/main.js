@@ -7,7 +7,7 @@ class MenuTop
 
       render()
       {
-            document.write(`<table style="width:100%;box-sizing:border-box;background-color:#0e8d44;color:white;padding:8px;text-align:center;">`);
+            document.write(`<table style="width:100%;height:60px;box-sizing:border-box;background-color:#0e8d44;color:white;padding:8px;text-align:center;">`);
                   document.write(`<tr>`);
                         for (let i=0; i < this.danhSachButton.length; i++)
                         {
