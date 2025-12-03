@@ -34,10 +34,10 @@ class MenuTop
                   menu_tr.appendChild(menu_td_iconUser);
             menu_table.appendChild(menu_tr);
 
-            menu_table.className = "menu__table";
+            menu_table.className = "menu__background";
 
             let menu_div =  document.createElement('div');
-            menu_div.className = "menu__div";
+            menu_div.className = "menu__button";
             menu_div.appendChild(menu_table);
 
             document.body.insertBefore(menu_div, document.body.firstChild);
