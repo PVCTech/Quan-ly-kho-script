@@ -71,7 +71,8 @@ menu__icon-menu:hover
     position: fixed;
     top:50px;
     right:0px;
-    width:300px;
+    width:200px;
+    padding:10px;
     display: none;
     background-color: var(--button-background);
     flex-direction: column;
