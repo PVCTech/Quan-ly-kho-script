@@ -79,17 +79,19 @@ menuTop.innerHTML = `
       </div>
 `;      
 document.body.insertBefore(menuTop, document.body.firstChild);
-
+var menuLeftShown = false;
 function menuLeft_toggle()
 {
       let menuLeft = document.getElementById("menuLeft");
-      if (menuLeft.style.left == "0px")
+      if (menuLeftShown)
       {
             menuLeft.style.display = "none";
+            menuLeftShown = false;
       }
       else
       {
             menuLeft.style.display = "block";
+            menuLeftShown = true;
       }
 }
 
