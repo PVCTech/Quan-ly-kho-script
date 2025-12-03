@@ -12,7 +12,7 @@ menuTop.innerHTML = `
       <table style="width:100%; height:100%;">
             <tr>
                   <td style="width:50px;">
-                        <a href="javascript:menuLeft_toggle()">
+                        <a href="javascript:void(0)" id="menuLeftButton">
                               <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/menu.svg" style="height:30px;" class="menu__icon-menu">
                         </a>
                   </td>
@@ -92,3 +92,5 @@ function menuLeft_toggle()
             menuLeft.style.display = "block";
       }
 }
+
+document.getElementById("menuLeftButton").addEventListener("click", menuLeft_toggle);
