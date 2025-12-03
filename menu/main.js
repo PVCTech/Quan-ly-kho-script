@@ -12,7 +12,7 @@ menuTop.innerHTML = `
       <table style="width:100%; height:100%;">
             <tr>
                   <td style="width:50px;">
-                        <a href="menuLeft_toggle()">
+                        <a href="javascript:menuLeft_toggle()">
                               <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/menu.svg" style="height:30px;" class="menu__icon-menu">
                         </a>
                   </td>
