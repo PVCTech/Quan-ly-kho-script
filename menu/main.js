@@ -1,9 +1,5 @@
 class MenuTop
 {
-      constructor(danhSachButton)
-      {
-            this.danhSachButton = danhSachButton;
-      }
 
       render()
       {
@@ -56,5 +52,5 @@ class MenuTop
       }
 }
 
-const menuTop = new MenuTop(menuTop_dachSachButton);
+const menuTop = new MenuTop();
 menuTop.render();
