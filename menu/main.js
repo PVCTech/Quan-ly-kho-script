@@ -58,8 +58,10 @@ class MenuTop_button
             let link = document.createElement('a');
             link.href = this.link;
             link.target = this.target;
-            link.className = "menu__button";
-            link.innerText = this.caption;
+                  let link_div = document.createElement('div');
+                  link_div.className = "menu__button";
+                  link_div.innerText = this.caption;
+            link.appendChild(link_div);
             return link;
       }
 }
