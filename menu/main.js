@@ -79,7 +79,7 @@ menuTop.innerHTML = `
       </div>
 
       <div class="menu__user" id="menuUser">
-            <div id="menuUser_name" style="font-weight:bold; font-size:16px; margin-bottom:10px;margin-top:10px;">
+            <div id="menuUser_name"  class="menu__button" style="font-weight:bold; margin-top:10px;">
                   Trần Văn Hùng
             </div>
             <div>
@@ -88,7 +88,7 @@ menuTop.innerHTML = `
                   </a>
             </div>
             <div>
-                  <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
+                  <a style="margin-botton:20px;" target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
                         Đăng xuất
                   </a>
             </div>
@@ -100,6 +100,8 @@ document.getElementById("menuLeftButton").addEventListener("click", menuLeft_tog
 var menuLeftShown = false;
 function menuLeft_toggle()
 {
+      document.getElementById("menuUser").style.display = "none";
+      menuUserShown = false;
       let menuLeft = document.getElementById("menuLeft");
       if (menuLeftShown)
       {
@@ -117,6 +119,8 @@ document.getElementById("menuUserButton").addEventListener("click", menuUser_tog
 var menuUserShown = false;
 function menuUser_toggle()
 {
+      document.getElementById("menuLeft").style.display = "none";
+      menuLeftShown = false;
       let menuUser = document.getElementById("menuUser");
       if (menuUserShown)
       {
