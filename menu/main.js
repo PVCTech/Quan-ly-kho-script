@@ -9,11 +9,17 @@ class MenuTop
       {
             document.write(`<table style="width:100%;height:60px;box-sizing:border-box;background-color:#0e8d44;color:white;padding:8px;text-align:center;">`);
                   document.write(`<tr>`);
+                        document.write(`<td style="width:50px;text-align:center;">
+                              <a href="#"><img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/menu.svg" style="height:40px;"></a>
+                        </td>`);
                         for (let i=0; i < this.danhSachButton.length; i++)
                         {
                               document.write(`<td>
                                 ${this.danhSachButton[i].render()}</td>`);
                         }
+                        document.write(`<td style="width:50px;text-align:center;">
+                              <a href="#"><img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/user.svg" style="height:40px;"></a>
+                        </td>`);
                   document.write(`</tr>`);
             document.write(`</table>`);
       }
