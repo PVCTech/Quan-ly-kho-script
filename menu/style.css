@@ -61,8 +61,7 @@ menu__icon-menu:hover
     width:100%;
     display: none;
     background-color: var(--button-background);
-    display: flex;
     flex-direction: column;
     z-index: 1000;
-    gap:10px;
+    gap:15px;
 }

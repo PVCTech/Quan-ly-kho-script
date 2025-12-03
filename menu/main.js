@@ -90,7 +90,7 @@ function menuLeft_toggle()
       }
       else
       {
-            menuLeft.style.display = "block";
+            menuLeft.style.display = "flex";
             menuLeftShown = true;
       }
 }
