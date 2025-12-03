@@ -12,15 +12,15 @@ menuTop.innerHTML = `
       <table style="width:100%; height:100%;">
             <tr>
                   <td style="width:50px;">
-                        <a href="#">
+                        <a href="menuLeft_toggle()">
                               <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/menu.svg" style="height:30px;" class="menu__icon-menu">
                         </a>
                   </td>
                   
                   <td>
                         <div style="display:flex; gap:10px;" id="menu_mainButton_top" class="menu__mainButton_top">
-                              <div class="menu__button">
-                                    <a href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec">
+                              <div>
+                                    <a href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
                                           Trang chủ
                                     </a>
                               </div>
