@@ -53,7 +53,7 @@ menuTop.innerHTML = `
             </tr>
       </table>
       <div class="menu__left" id="menuLeft">
-            <div>
+            <div style="margin-top:10px;">
                   <a href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
                         Trang chủ
                   </a>
