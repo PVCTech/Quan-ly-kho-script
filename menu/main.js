@@ -14,6 +14,7 @@ class MenuTop
                                     let iconMenu_img = document.createElement('img');
                                     iconMenu_img.src = "https://pvctech.github.io/Quan-ly-kho-script/menu/img/menu.svg";
                                     iconMenu_img.style.height = "30px";
+                                    iconMenu_img.className = "menu__icon-menu";
                               iconMenu_a.appendChild(iconMenu_img);
                         menu_td_iconMenu.appendChild(iconMenu_a);
                   menu_tr.appendChild(menu_td_iconMenu);
