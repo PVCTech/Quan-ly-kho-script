@@ -7,21 +7,40 @@ class MenuTop
 
       render()
       {
-            document.write(`<table style="width:100%;height:60px;box-sizing:border-box;background-color:#0e8d44;color:white;padding:8px;text-align:center;">`);
-                  document.write(`<tr>`);
-                        document.write(`<td style="width:50px;text-align:center;">
-                              <a href="#"><img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/menu.svg" style="height:30px;"></a>
-                        </td>`);
+            let menu_table = document.createElement('table');
+                  let menu_tr = document.createElement('tr');
+                        let menu_td_iconMenu = document.createElement('td');
+                              let iconMenu_a = document.createElement('a');
+                                    let iconMenu_img = document.createElement('img');
+                                    iconMenu_img.src = "https://pvctech.github.io/Quan-ly-kho-script/menu/img/menu.svg";
+                                    iconMenu_img.style.height = "30px";
+                              iconMenu_a.appendChild(iconMenu_img);
+                        menu_td_iconMenu.appendChild(iconMenu_a);
+                  menu_tr.appendChild(menu_td_iconMenu);
                         for (let i=0; i < this.danhSachButton.length; i++)
                         {
-                              document.write(`<td>
-                                ${this.danhSachButton[i].render()}</td>`);
+                              let menu_td_button = document.createElement('td');
+                              menu_td_button.appendChild(this.danhSachButton[i].render());
+                              menu_tr.appendChild(menu_td_button);
                         }
-                        document.write(`<td style="width:50px;text-align:center;">
-                              <a href="#"><img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/user.svg" style="height:30px;"></a>
-                        </td>`);
-                  document.write(`</tr>`);
-            document.write(`</table>`);
+
+                        let menu_td_iconUser = document.createElement('td');
+                              let iconUser_a = document.createElement('a');
+                                    let iconUser_img = document.createElement('img');
+                                    iconUser_img.src = "https://pvctech.github.io/Quan-ly-kho-script/menu/img/user.svg";
+                                    iconUser_img.style.height = "30px";
+                              iconUser_a.appendChild(iconUser_img);
+                        menu_td_iconUser.appendChild(iconUser_a);
+                  menu_tr.appendChild(menu_td_iconUser);
+            menu_table.appendChild(menu_tr);
+
+            menu_table.className = "menu__table";
+
+            let menu_div =  document.createElement('div');
+            menu_div.className = "menu__div";
+            menu_div.appendChild(menu_table);
+
+            document.body.insertBefore(menu_div, document.body.firstChild);
       }
 }
 
@@ -36,12 +55,12 @@ class MenuTop_button
 
       render()
       {
-            let html = `<a href="${this.link}" target="${this.target}">
-            <div class="menu__button">
-              ${this.caption}
-            </div>
-          </a>`;
-            return html;
+            let link = document.createElement('a');
+            link.href = this.link;
+            link.target = this.target;
+            link.className = "menu__button";
+            link.innerText = this.caption;
+            return link;
       }
 }
 
