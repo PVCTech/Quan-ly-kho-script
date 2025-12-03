@@ -5,12 +5,13 @@
   --button-background:#0e8d44;
   --button-color:#fff;
   --main-border:1px solid #f67c0a;
+  --main-text-color:#333;
 }
 
 body
 {
   background-color:var(--main-background);
-  color: var(--main-color);
+  color: var(--main-text-color);
 }
 
 .menu__background
