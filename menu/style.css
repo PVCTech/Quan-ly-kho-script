@@ -37,11 +37,6 @@ menu__icon-menu:hover
     {
         display: none !important;
     }
-
-    .menu__left
-    {
-        display: none;
-    }
 }
 
 @media only screen and (min-width:577px)
@@ -54,12 +49,7 @@ menu__icon-menu:hover
 
   .menu__mainButton_top
     {
-        display: block !important;
-    }
-
-    .menu__left
-    {
-        display: none;
+        display: flex !important;
     }
 }
 
@@ -71,4 +61,8 @@ menu__icon-menu:hover
     width:100%;
     display: none;
     background-color: var(--button-background);
+    display: flex;
+    flex-direction: column;
+    z-index: 1000;
+    gap:10px;
 }
