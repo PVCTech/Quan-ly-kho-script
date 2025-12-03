@@ -34,3 +34,16 @@ input, button,.button, .inputBox {
   border-radius: 5px;
   box-sizing:border-box !important;
 }
+
+@media only screen and (max-width:576px)
+{
+  input, button,.button, .inputBox 
+  {
+  padding: 10px;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 14px;
+  border-radius: 5px;
+  box-sizing:border-box !important;
+  }
+}
