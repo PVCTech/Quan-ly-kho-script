@@ -55,15 +55,50 @@ menuTop.innerHTML = `
       <div class="menu__left" id="menuLeft">
             <div style="margin-top:10px;">
                   <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
+                        <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/home.svg" style="height:20px; margin-right:5px;">
                         Trang chủ
                   </a>
             </div>
+
+
+            <div>
+                  <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/danh-muc.svg" style="height:20px; margin-right:5px;">
+                  Danh mục
+            </div>
+                  <div style="margin-left:20px;">
+                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
+                              <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/home.svg" style="height:20px; margin-right:5px;">
+                              Khách hàng
+                        </a>
+                  </div>
+
+                  <div style="margin-left:20px;">
+                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
+                              <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/home.svg" style="height:20px; margin-right:5px;">
+                              Sản phẩm
+                        </a>
+                  </div>
+
+                  <div style="margin-left:20px;">
+                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
+                              <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/home.svg" style="height:20px; margin-right:5px;">
+                              Vật tư
+                        </a>
+                  </div>
+
+
 
             <div>
                   <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
                         Nhập kho
                   </a>
             </div>
+                  <div style="margin-top:30px;">
+                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
+                              <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/home.svg" style="height:20px; margin-right:5px;">
+                              Trang chủ
+                        </a>
+                  </div>
 
             <div>
                   <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=danh-muc-vat-tu" class="menu__button">
@@ -97,22 +132,11 @@ menuTop.innerHTML = `
 document.body.insertBefore(menuTop, document.body.firstChild);
 
 document.getElementById("menuLeftButton").addEventListener("click", menuLeft_toggle);
-var menuLeftShown = false;
 function menuLeft_toggle()
 {
       document.getElementById("menuUser").style.display = "none";
       menuUserShown = false;
-      let menuLeft = document.getElementById("menuLeft");
-      if (menuLeftShown)
-      {
-            menuLeft.classList.remove("menu__left--active");
-            menuLeftShown = false;
-      }
-      else
-      {
-            menuLeft.classList.add("menu__left--active");
-            menuLeftShown = true;
-      }
+      document.getElementById("menuLeft").classList.toggle("menu__left--active");
 }
 
 document.getElementById("menuUserButton").addEventListener("click", menuUser_toggle);
