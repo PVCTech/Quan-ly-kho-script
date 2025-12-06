@@ -79,7 +79,7 @@ menuTop.innerHTML = `
                         </div>
 
                         <div class="menu__left__sub-menu">
-                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
+                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=danh-muc-vat-tu" class="menu__button">
                                     Vật tư
                               </a>
                         </div>
@@ -116,7 +116,7 @@ menuTop.innerHTML = `
                         Xuất kho
                   </div>
                         <div class="menu__left__sub-menu">
-                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
+                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=tra-cuu-vat-tu" class="menu__button">
                                     Tạo phiếu xuất
                               </a>
                         </div>
@@ -165,17 +165,6 @@ menuTop.innerHTML = `
                         </a>
                   </div>
 
-            <div>
-                  <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=danh-muc-vat-tu" class="menu__button">
-                        Danh mục vật tư
-                  </a>
-            </div>
-            
-            <div style="margin-bottom:20px;">
-                  <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=tra-cuu-vat-tu" class="menu__button">
-                        Tìm, Xuất vật tư
-                  </a>
-            </div>
       </div>
 
       <div class="menu__user" id="menuUser">

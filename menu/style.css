@@ -64,6 +64,7 @@ menu__icon-menu:hover
     transition: 0.3s ease;
     width:100%;
     display: flex;
+    flex-wrap: wrap;
     background-color: var(--button-background);
     z-index: 1000;
     gap:20px;
