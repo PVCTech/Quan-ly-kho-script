@@ -105,12 +105,12 @@ function menuLeft_toggle()
       let menuLeft = document.getElementById("menuLeft");
       if (menuLeftShown)
       {
-            menuLeft.style.display = "none";
+            menuLeft.style.classList.remove("menu__left--active");
             menuLeftShown = false;
       }
       else
       {
-            menuLeft.style.display = "flex";
+            menuLeft.style.classList.add("menu__left--active");
             menuLeftShown = true;
       }
 }
