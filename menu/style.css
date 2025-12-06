@@ -73,6 +73,11 @@ menu__icon-menu:hover
     transform: translateX(0%);    
 }
 
+.menu__left-sub-menu
+{
+    padding-left:20px;
+}
+
 .menu__user
 {
     position: fixed;
