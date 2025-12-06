@@ -101,13 +101,6 @@ menuTop.innerHTML = `
                                     Lịch sử nhập
                               </a>
                         </div>
-
-                        <div style="margin-top:30px;">
-                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
-                                    <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/home.svg" style="height:20px; margin-right:5px;">
-                                    Trang chủ
-                              </a>
-                        </div>
             </div>
 
             <div class="menu__left__group">
@@ -155,16 +148,6 @@ menuTop.innerHTML = `
                               </a>
                         </div>
             </div>
-
-
-
-                  <div style="margin-top:30px;">
-                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
-                              <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/home.svg" style="height:20px; margin-right:5px;">
-                              Trang chủ
-                        </a>
-                  </div>
-
       </div>
 
       <div class="menu__user" id="menuUser">
