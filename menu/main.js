@@ -53,7 +53,7 @@ menuTop.innerHTML = `
             </tr>
       </table>
       <div class="menu__left" id="menuLeft">
-            <div style="margin-top:10px;">
+            <div class="menu__left__group">
                   <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
                         <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/home.svg" style="height:20px; margin-right:5px;">
                         Trang chủ
@@ -61,98 +61,102 @@ menuTop.innerHTML = `
             </div>
 
 
-            <div>
-                  <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/danh-muc.svg" style="height:20px; margin-right:5px;">
-                  Danh mục
+            <div class="menu__left__group">
+                  <div class="menu__button">
+                        <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/danh-muc.svg" style="height:20px; margin-right:5px;">
+                        Danh mục
+                  </div>
+                        <div class="menu__left__sub-menu">
+                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
+                                    Khách hàng
+                              </a>
+                        </div>
+
+                        <div class="menu__left__sub-menu">
+                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
+                                    <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/home.svg" style="height:20px; margin-right:5px;">
+                                    Sản phẩm
+                              </a>
+                        </div>
+
+                        <div class="menu__left__sub-menu">
+                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
+                                    <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/home.svg" style="height:20px; margin-right:5px;">
+                                    Vật tư
+                              </a>
+                        </div>
             </div>
-                  <div class="menu__left-sub-menu">
-                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
-                              <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/home.svg" style="height:20px; margin-right:5px;">
-                              Khách hàng
-                        </a>
+
+            <div class="menu__left__group">
+                  <div class="menu__button">
+                        <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/nhap-kho.svg" style="height:20px; margin-right:5px;">
+                        Nhập kho
                   </div>
+                        <div class="menu__left__sub-menu">
+                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
+                                    Tạo phiếu nhập
+                              </a>
+                        </div>
 
-                  <div class="menu__left-sub-menu">
-                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
-                              <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/home.svg" style="height:20px; margin-right:5px;">
-                              Sản phẩm
-                        </a>
-                  </div>
+                        <div class="menu__left__sub-menu">
+                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
+                                    Lịch sử nhập
+                              </a>
+                        </div>
 
-                  <div class="menu__left-sub-menu">
-                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
-                              <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/home.svg" style="height:20px; margin-right:5px;">
-                              Vật tư
-                        </a>
-                  </div>
-
-
-            <div>
-                  <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/nhap-kho.svg" style="height:20px; margin-right:5px;">
-                  Nhập kho
+                        <div style="margin-top:30px;">
+                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
+                                    <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/home.svg" style="height:20px; margin-right:5px;">
+                                    Trang chủ
+                              </a>
+                        </div>
             </div>
-                  <div class="menu__left-sub-menu">
-                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
-                              Tạo phiếu nhập
-                        </a>
+
+            <div class="menu__left__group">
+                  <div class="menu__button">
+                        <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/xuat-kho.svg" style="height:20px; margin-right:5px;">
+                        Xuất kho
                   </div>
+                        <div class="menu__left__sub-menu">
+                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
+                                    Tạo phiếu xuất
+                              </a>
+                        </div>
 
-                  <div class="menu__left-sub-menu">
-                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
-                              Lịch sử nhập
-                        </a>
-                  </div>
-
-                  <div style="margin-top:30px;">
-                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
-                              <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/home.svg" style="height:20px; margin-right:5px;">
-                              Trang chủ
-                        </a>
-                  </div>
-
-
-            <div>
-                  <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/xuat-kho.svg" style="height:20px; margin-right:5px;">
-                  Xuất kho
+                        <div class="menu__left__sub-menu">
+                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
+                                    Lịch sử xuất
+                              </a>
+                        </div>
             </div>
-                  <div class="menu__left-sub-menu">
-                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
-                              Tạo phiếu xuất
-                        </a>
+
+            <div class="menu__left__group">
+                  <div class="menu__button">
+                        <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/xuat-kho.svg" style="height:20px; margin-right:5px;">
+                        Tồn kho
                   </div>
+                        <div class="menu__left__sub-menu">
+                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
+                                    Tổng tồn kho
+                              </a>
+                        </div>
 
-                  <div class="menu__left-sub-menu">
-                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
-                              Lịch sử xuất
-                        </a>
-                  </div>
-
-
-            <div>
-                  <img src="https://pvctech.github.io/Quan-ly-kho-script/menu/img/xuat-kho.svg" style="height:20px; margin-right:5px;">
-                  Tồn kho
+                        <div class="menu__left__sub-menu">
+                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
+                                    Tồn kho theo vị trí
+                              </a>
+                        </div>
+                        <div class="menu__left__sub-menu">
+                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
+                                    Tồn kho theo vị trí
+                              </a>
+                        </div>
+                        <div class="menu__left__sub-menu">
+                              <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
+                                    Tồn kho theo vị trí
+                              </a>
+                        </div>
             </div>
-                  <div class="menu__left-sub-menu">
-                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
-                              Tổng tồn kho
-                        </a>
-                  </div>
-
-                  <div class="menu__left-sub-menu">
-                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
-                              Tồn kho theo vị trí
-                        </a>
-                  </div>
-                  <div class="menu__left-sub-menu">
-                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
-                              Tồn kho theo vị trí
-                        </a>
-                  </div>
-                  <div class="menu__left-sub-menu">
-                        <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec?page=nhap-kho" class="menu__button">
-                              Tồn kho theo vị trí
-                        </a>
-                  </div>
 
 
 
