@@ -52,6 +52,7 @@ menuTop.innerHTML = `
                   </td>
             </tr>
       </table>
+
       <div class="menu__left" id="menuLeft">
             <div class="menu__left__group">
                   <a target="_top" href="https://script.google.com/macros/s/AKfycbxDnHxsFqRivAKjnJWYGzCq8OB819sRS9vT9-X9K1B56zfqsVk8TvJf8_NnX3JXYIz6/exec" class="menu__button">
@@ -59,7 +60,6 @@ menuTop.innerHTML = `
                         Trang chủ
                   </a>
             </div>
-
 
             <div class="menu__left__group">
                   <div class="menu__button">
@@ -180,8 +180,7 @@ document.getElementById("menuUserButton").addEventListener("click", menuUser_tog
 var menuUserShown = false;
 function menuUser_toggle()
 {
-      document.getElementById("menuLeft").style.display = "none";
-      menuLeftShown = false;
+      document.getElementById("menuLeft").classList.remove("menu__left--active");
       let menuUser = document.getElementById("menuUser");
       if (menuUserShown)
       {
