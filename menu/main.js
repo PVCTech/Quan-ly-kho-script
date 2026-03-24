@@ -155,7 +155,7 @@ menuTop.innerHTML = `
             <div id="userMenu_hoVaTen"  class="menu__button" style="font-weight:bold; margin-top:10px;">
                   Trần Văn Hùng
             </div>
-            <div>
+            <div style="display:none;">
                   <a target="_top" href="javascript:void(0);"  onclick="changePassword();" class="menu__button">
                         <font color="white">Đổi mật khẩu</font>
                   </a>
