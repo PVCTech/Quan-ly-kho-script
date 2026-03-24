@@ -7,7 +7,7 @@ menuTop.className = "menu__background";
       menuTop.style.width = "100%";
       menuTop.style.height = "50px";
       menuTop.style.zIndex = "1000";
-document.body.appendChild(menuTop);
+//document.body.appendChild(menuTop);
 menuTop.innerHTML = `
       <table style="width:100%; height:100%;">
             <tr>
