@@ -41,9 +41,10 @@ function getUserStatus(key)
 
 function doLogin(loginInfor)
 {
+ var ss = SpreadsheetApp.getActive();
   var sheetSetup = ss.getSheetByName("setup");
   const KeyDuAn = sheetSetup.getRange(1, 2,1,1).getValue();
-  
+
   let status = {userHoVaTen: '' , status: 'notOk', userKey: '', message:''};
 
   loginInfor = JSON.parse(loginInfor);
