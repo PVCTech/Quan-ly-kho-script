@@ -182,7 +182,7 @@ var menuUserShown = false;
 function menuUser_toggle()
 {
       document.getElementById("menuLeft").classList.remove("menu__left--active");
-      let menuUser = document.getElementById("menuUser");
+      let menuUser = document.getElementById("userMenu");
       if (menuUserShown)
       {
             menuUser.style.display = "none";
