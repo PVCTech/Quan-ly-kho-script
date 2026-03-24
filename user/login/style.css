@@ -1,0 +1,109 @@
+@keyframes hideShow {
+  0%   {opacity: 0;}
+  25%  {opacity: 0.25;}
+  50%  {opacity: 0.5;}
+  100% {opacity: 1;}
+}
+
+.login__container  
+{
+    display:none;
+    position:fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height:100vh;
+    justify-content:center;
+    background: rgba(255,255,255,0.75);
+}
+
+
+.login__div 
+{
+    margin-top:60px;
+    background: -webkit-linear-gradient(top left, red, #ff7100);
+    max-height:410px;
+    animation-name: hideShow;
+    animation-duration: 0.5s;
+}
+
+
+
+@media only screen and (max-width:576px) 
+{
+    .login__div {width: 90%;}
+}
+
+@media only screen and (min-width:577px) 
+{
+    .login__div {width: 400px;}
+}
+
+
+.login__error
+{
+    animation-name: hideShow;
+    animation-duration: 0.5s;
+}
+
+.login__form
+{
+  animation-name: hideShow;
+  animation-duration: 0.5s;
+}
+
+.login__header 
+{
+    width: 100%;
+    height: 50px;
+    padding-top: 5px;
+    padding-left: 5px;
+    font-weight: bold;
+    text-align: left;
+    font: 20px Arial, Helvetica, sans-serif;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius:3px;
+    z-index: 101;
+    background: -webkit-linear-gradient(top left, red, #ff7100);
+}
+    
+@media only screen and (min-width: 577px)
+{
+    .login__header 	{width:400px;}
+}
+    
+.InputA
+{
+    animation-name: hideShow;
+    animation-duration: 0.5s;
+    
+    margin-top:20px;
+    background:none;
+    border-top:0px;
+    border-bottom:1px solid white;
+    border-right:0px solid;
+    border-left:0px solid;
+    color:white;
+    height:16px;
+    font-size:18px;
+    padding:8px 0px 5px 30px;
+    width:92%;
+}
+
+.InputA:focus {
+    outline: none !important;
+    
+  
+  background:rgba(255,255,255,0.1);
+  border-top:0px;
+  border-bottom:2px solid white;
+  border-right:0px solid;
+  border-left:0px solid;
+  color:white;
+}
+
+::-webkit-input-placeholder { /* Edge */
+  color: rgba(255,255,255,0.6);
+}
+    
+
