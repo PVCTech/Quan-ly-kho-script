@@ -170,7 +170,7 @@ document.body.insertBefore(menuTop, document.body.firstChild);
 document.getElementById("menuLeftButton").addEventListener("click", menuLeft_toggle);
 function menuLeft_toggle()
 {
-      document.getElementById("menuUser").style.display = "none";
+      document.getElementById("userMenu").style.display = "none";
       menuUserShown = false;
       document.getElementById("menuLeft").classList.toggle("menu__left--active");
 }
