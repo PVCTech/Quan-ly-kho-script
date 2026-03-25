@@ -162,7 +162,7 @@ menuTop.innerHTML = `
             </div>
             <div>
                   <span style="margin-botton:20px;" id="userMenu_dangXuat" onclick="logout();" class="menu__button">
-                        <font color="white">Đăng xuất</font>
+                        Đăng xuất
                   </span>
             </div>
       </div>
