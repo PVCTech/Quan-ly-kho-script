@@ -160,10 +160,8 @@ menuTop.innerHTML = `
                         <font color="white">Đổi mật khẩu</font>
                   </a>
             </div>
-            <div>
-                  <span style="margin-botton:20px;" id="userMenu_dangXuat" onclick="logout();" class="menu__button">
-                        Đăng xuất
-                  </span>
+            <div style="margin-bottom:20px;" id="userMenu_dangXuat" onclick="logout();" class="menu__button">
+                  Đăng xuất
             </div>
       </div>
 `;      
